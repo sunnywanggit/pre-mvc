@@ -1,0 +1,12 @@
+#app3 {
+}
+#app3 #box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+#app3 #box.animation{
+    transform: translateX(100px);
+
+}

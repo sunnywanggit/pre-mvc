@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ol,ul{
+    list-style: none;
+}
+.page{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#app1,#app2,#app3,#app4{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid red;
+    
+}
+#app1{
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+}
+
+#app1 .output{}
+
+#app1 .actions{}
+#app2{
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+}
+#app2 .tab-bar > ol{
+    width: 100%;
+    display: flex;
+}
+#app2 .tab-bar > ol > li{
+    width: 50%;
+    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display:inline-block;
+}
+#app2 .tab-content > ol >li{
+    display:inline-block;
+}
+#app2 .tab-content > ol >li.active{
+    display:none;
+}
+#app3 {
+}
+#app3 #box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+#app3 #box.animation{
+    transform: translateX(100px);
+
+}
+#app4 .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+@keyframes change{
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+#app4 .circle.active{
+    animation: change 2s infinite alternate linear;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

@@ -1,0 +1,22 @@
+#app2{
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+}
+#app2 .tab-bar > ol{
+    width: 100%;
+    display: flex;
+}
+#app2 .tab-bar > ol > li{
+    width: 50%;
+    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display:inline-block;
+}
+#app2 .tab-content > ol >li{
+    display:inline-block;
+}
+#app2 .tab-content > ol >li.active{
+    display:none;
+}
